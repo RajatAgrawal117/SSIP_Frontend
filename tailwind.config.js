@@ -9,6 +9,9 @@ module.exports = {
     screens: { md: { max: "1050px" }, sm: { max: "550px" } },
     extend: {
       colors: {
+        black: { 900: "#000000", "900_3f": "#0000003f" },
+        white: { A700: "#ffffff" },
+        lime: { 100: "#faedcd" },
         gray: {
           500: "#a78a7f",
           600: "#727272",
@@ -16,9 +19,7 @@ module.exports = {
           800: "#463f3a",
         },
         blue_gray: { 100: "#d9d9d9" },
-        black: { 900: "#000000", "900_3f": "#0000003f" },
-        white: { A700: "#ffffff" },
-        lime: { 100: "#faedcd" },
+        colors: "#463F3A",
       },
       boxShadow: {
         bs1: "0px 4px  4px 0px #a78a7f",

@@ -1,10 +1,13 @@
 import React from "react";
 
 import { Sidebar } from "react-pro-sidebar";
+import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Line, Text } from "components";
 
 const DesktopOnePage = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="bg-gray-800 flex font-gilroy h-[1024px] justify-end mx-auto relative w-full">
@@ -31,7 +34,10 @@ const DesktopOnePage = () => {
           </div>
         </div>
         <div className="absolute font-inter h-[1024px] inset-[0] justify-center m-auto md:px-5 w-full">
-          <div className="h-[1024px] m-auto w-full">
+          <div
+            className="common-pointer md:h-[1024px] m-auto static w-full"
+            onClick={() => navigate("/desktopone")}
+          >
             <div className="absolute bg-gray-500 border border-gray-500 border-solid flex md:flex-col flex-row gap-[39px] items-center justify-center p-[18px] right-[0] rounded-md shadow-bs top-[12%] w-[83%]">
               <Text
                 className="bg-blue_gray-100 flex h-[50px] items-center justify-center md:ml-[0] ml-[31px] rounded-[5px] text-4xl sm:text-[32px] md:text-[34px] text-center text-gray-800 w-[50px]"
@@ -46,20 +52,20 @@ const DesktopOnePage = () => {
                 What is MYSY ?
               </Text>
             </div>
-            <header className="absolute bg-gray-600 border border-gray-700 border-solid flex sm:flex-col flex-row sm:gap-5 items-center justify-center right-[3%] rounded-md shadow-bs top-[3%] w-full">
+            <header className="absolute bg-gray-600 border border-gray-700 border-solid flex md:flex-col flex-row md:gap-5 items-center justify-center right-[3%] rounded-md shadow-bs top-[3%] w-[1000px]">
               <Button
-                className="border border-blue_gray-100 border-solid cursor-pointer font-extrabold leading-[normal] min-w-[246px] ml-3.5 sm:ml-[0] sm:mt-0 my-[9px] text-2xl md:text-[22px] text-center sm:text-xl"
+                className="border border-blue_gray-100 border-solid cursor-pointer font-extrabold leading-[normal] min-w-[246px] ml-3.5 md:ml-[0] md:mt-0 my-[9px] text-2xl md:text-[22px] text-center sm:text-xl"
                 color="lime_100"
               >
                 STUDENT
               </Button>
-              <Button className="border border-blue_gray-100 border-solid cursor-pointer font-extrabold leading-[normal] min-w-[246px] sm:ml-[0] ml-[27px] sm:mt-0 my-[9px] text-2xl md:text-[22px] text-center sm:text-xl">
+              <Button className="border border-blue_gray-100 border-solid cursor-pointer font-extrabold leading-[normal] min-w-[246px] md:ml-[0] ml-[27px] md:mt-0 my-[9px] text-2xl md:text-[22px] text-center sm:text-xl">
                 EDUCATOR
               </Button>
-              <Button className="border border-blue_gray-100 border-solid cursor-pointer font-extrabold leading-[normal] min-w-[246px] sm:ml-[0] ml-[25px] sm:mt-0 my-[9px] text-2xl md:text-[22px] text-center sm:text-xl">
+              <Button className="border border-blue_gray-100 border-solid cursor-pointer font-extrabold leading-[normal] min-w-[246px] md:ml-[0] ml-[25px] md:mt-0 my-[9px] text-2xl md:text-[22px] text-center sm:text-xl">
                 ADMINISTRATOR
               </Button>
-              <Button className="border border-blue_gray-100 border-solid cursor-pointer font-extrabold leading-[normal] min-w-[246px] sm:ml-[0] ml-[25px] mr-3 sm:mt-0 my-[9px] text-2xl md:text-[22px] text-center sm:text-xl">
+              <Button className="border border-blue_gray-100 border-solid cursor-pointer font-extrabold leading-[normal] min-w-[246px] md:ml-[0] ml-[25px] mr-3 md:mt-0 my-[9px] text-2xl md:text-[22px] text-center sm:text-xl">
                 STAKEHOLDER
               </Button>
             </header>
@@ -68,7 +74,7 @@ const DesktopOnePage = () => {
               src="images/img_micfill0wght4.svg"
               alt="micfill0wghtFour"
             />
-            <Sidebar className="!sticky !w-64 bg-blue_gray-100 border border-blue_gray-100 border-solid flex font-gilroy h-screen md:hidden inset-y-[0] justify-start left-[0] my-auto overflow-auto rounded-md shadow-bs top-[0]">
+            <Sidebar className="!sticky !w-64 bg-colors border border-blue_gray-100 border-solid flex font-gilroy h-screen md:hidden inset-y-[0] justify-start left-[0] my-auto overflow-auto rounded-md shadow-bs top-[0]">
               <div className="flex flex-col gap-[23px] items-center justify-start mb-[25px] mt-[21px] w-full">
                 <Button
                   className="border border-blue_gray-100 border-solid cursor-pointer font-bold leading-[normal] min-w-[223px] text-2xl md:text-[22px] text-center sm:text-xl"
@@ -280,7 +286,7 @@ const DesktopOnePage = () => {
               <Line className="bg-blue_gray-100 h-[1024px] shadow-bs1 w-px" />
             </Sidebar>
           </div>
-          <div className="absolute bg-gray-500 border border-gray-500 border-solid flex md:flex-col flex-row gap-9 items-center justify-center p-[5px] right-[0] rounded-md shadow-bs top-[38%] w-[83%]">
+          <div className="absolute bg-gray-500 border border-gray-500 border-solid flex md:flex-col flex-row gap-9 items-center justify-center p-[5px] right-[0] rounded-md shadow-bs top-[38%] w-4/5">
             <Text
               className="bg-blue_gray-100 flex h-[50px] items-center justify-center ml-11 md:ml-[0] md:mt-0 my-[13px] rounded-[5px] text-4xl sm:text-[32px] md:text-[34px] text-center text-gray-800 w-[50px]"
               size="txtInterSemiBold36"
@@ -288,7 +294,7 @@ const DesktopOnePage = () => {
               M
             </Text>
             <Text
-              className="mb-[7px] mr-[39px] text-3xl sm:text-[26px] md:text-[28px] text-white-A700 w-[86%] sm:w-full"
+              className="mb-[7px] mr-[39px] p-px text-3xl sm:text-[26px] md:text-[28px] text-white-A700 w-[83%] sm:w-full"
               size="txtGilroyMedium30"
             >
               Are there any academic support services available to help students
@@ -329,7 +335,7 @@ const DesktopOnePage = () => {
           </div>
           <div className="absolute bottom-[38%] flex md:flex-col flex-row font-gilroy md:gap-5 items-end justify-start right-[2%] w-[71%]">
             <Text
-              className="text-2xl md:text-[22px] text-white-A700 sm:text-xl w-[91%] sm:w-full"
+              className="relative right-[15px] text-2xl md:text-[22px] text-white-A700 sm:text-xl top-2.5 w-[95%] sm:w-full"
               size="txtGilroyMedium24"
             >
               Yes, the institution offers a range of academic support services
